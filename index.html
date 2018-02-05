@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>#Palette 816</title>
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <script type="text/javascript" src="script/script.js"></script>
+</head>
+<body onload="construction(couleur())">
+    <input type="text" id="selection"/>
+    <header id='entete'>
+        <h1 id="titre">#Palette 816</h1>
+        <ul id="liste_temoins"></ul>
+        <section>
+            <label for="couleur_choisie">hexa :</label>
+            <input type="text" id="couleur_choisie" placeholder="#27e26b" pattern="[0-9A-Fa-f#]{7}" onchange="changer()"/>
+        </section>
+    </header>
+    <ul id="liste"></ul>
+    <footer>© ORLAY Arnaud 2018</footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    font-family:Sans-Serif, Arial;
+    margin: 0;
+    background-image: url("../images/header.jpg");
+    background-attachment: fixed;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#entete {
+    display: flex;
+    background-color: #141319;
+    padding: 1em;
+    color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 2px #000000;
+    flex: 1 0 95vw;
+    border-bottom: 10px solid #2d2c34;
+    transition: 0.3s border-color 0s linear;
+}
+
+footer {
+    background-color: #141319;
+    flex:1 0 95vw;
+    padding:1em;
+    color:#333333;
+}
+
+h1, p {
+    margin: 0;
+}
+
+#titre {
+    flex-grow: 1;
+}
+
+
+label {
+    background-color: #2d2c34;
+    padding:0.5em;
+    padding-left: 0.8em;
+    border-radius: 1em 0 0 1em;
+    font-size: 1.06em;
+    position: relative;
+    left:4px;
+    color:#FFFFFF;
+}
+
+#couleur_choisie {
+    padding:0.5em;
+    padding-left: 0;
+    border: none;
+    border-radius: 0 1em 1em 0;
+    font-size: 1em;
+    outline: none;
+    width:4em;
+    background-color: #2d2c34;
+    color:#FFFFFF;
+}
+
+#liste {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    padding: 0;
+    flex:1 1 50vw;
+}
+
+#liste li {
+    list-style-type: none;
+    text-align: center;
+    flex: 1 0 13vw;
+    color:#fff;
+    margin: 0.3em;
+    cursor:pointer;
+}
+
+.couleur {
+    height:5vw;
+    text-align: left;
+    font-family: Monospace;
+}
+
+.temoin {
+    border-radius: 100%;
+    padding: 0.8em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.2em;
+    cursor:pointer;
+}
+
+.temoin:hover .bulle{
+    display: block;
+}
+
+.bulle {
+    position: absolute;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 4px;
+    padding: 0.8em;
+    display: none;
+    margin-top:1.6em;
+    box-shadow: 1px 1px 2px #000000;
+    transform: translateX(-50%);
+    font-size:0.8em;
+    transition: 2s margin-top 1s linear;
+}
+
+.bulle::before {
+    content: '';
+    position:absolute;
+    border-bottom: 8px solid #FFFFFF;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: -1.3em;
+    margin-left: 24%;
+}
+
+#liste_temoins {
+    list-style-type: none;
+    display:flex;
+    margin: 0;
+    padding:0.3em;
+}
+
+#selection {
+    position:absolute;
+    left: -30vw;
+    top: -30vw;
+}
